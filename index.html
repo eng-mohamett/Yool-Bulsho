@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +12,25 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="logo.png" alt="Yool Bulsho Logo">
+        <img src="logo.png" alt="Logo" />
         <span>YOOL BULSHO</span>
       </div>
-      <ul class="nav-links">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
-
+        <li><a href="apply.html" class="apply-button">Apply</a></li>
       </ul>
     </nav>
   </header>
+
+  <script>
+    document.getElementById('mobile-menu').onclick = function () {
+      document.getElementById('nav-links').classList.toggle('active');
+    };
+  </script>
 
   <!-- HOME SECTION -->
   <section id="home" class="section home">
@@ -56,9 +64,7 @@
       <div><img src="team.jpg" alt="Activity 3"><p>Seminaaro Waxbarasho Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto ullam officiis doloremque perferendis.</p></div>
     </div>
   </section>
-<div class="bt">
-  <button class="btn"> <a href="apply.html" class="apply-button">Apply now</a> </button>
-</div>
+
   <!-- FOOTER WITH CONTACT -->
   <footer id="contact">
     <h2>Contact</h2>

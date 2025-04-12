@@ -19,48 +19,50 @@
   }
 
   .navbar {
-    background-color: green;
     display: flex;
-    justify-content:center ;
+    justify-content: space-between;
     align-items: center;
-    max-width: 100%;
-    margin: auto;
-    padding: 15px 0px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
     gap: 10px;
   }
-
-  .logo {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-  }
-
+  
   .logo img {
-      background-color: white;
-      border-radius: 60px;
-      width: 60px;
-    height: 60px;
-    margin-right: 10px;
+    height: 40px;
   }
-
+  
   .nav-links {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 15px;
   }
-
+  
   .nav-links li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
   }
-
+  
   .apply-button {
-    background: rgb(6, 160, 73);
-    color: green;
+    background-color: green;
+    color: rgb(243, 248, 243);
     padding: 5px 10px;
     border-radius: 5px;
   }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
 
   .section {
     padding: 40px 20px;
@@ -118,6 +120,7 @@
     padding: 20px;
 }
    form{
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -171,13 +174,26 @@ display: flex;
     text-decoration: none;
   }
 
-  @media (max-width: 100%) {
-    .nav-links {
-      flex-direction: column;
-      gap: 10px;
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
     }
-
-    .about-images {
+  
+    .nav-links {
+      display: none;
+      width: 100%;
       flex-direction: column;
+      background-color: green;
+      padding: 10px 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      padding: 10px 0;
     }
   }
+  
