@@ -26,45 +26,67 @@
     </nav>
   </header>
 
+  <!-- other content here -->
+
+  
   <script>
-    document.getElementById('mobile-menu').onclick = function () {
-      document.getElementById('nav-links').classList.toggle('active');
-    };
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('animated');
+    });
   </script>
+
 
   <!-- HOME SECTION -->
   <section id="home" class="section home">
-    <h1>Ku Soo Dhawoow Yool Bulsho</h1>
-    <p>Urur u taagan horumarka bulshada Soomaaliyeed</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ducimus cum, fugiat porro molestiae nostrum asperiores totam perspiciatis possimus, ipsa, aut explicabo. Quos ullam provident rem explicabo voluptas, eveniet dicta officiis libero sequi magni iusto magnam deleniti maxime, error autem.</p>
-    <h3>NGO</h3>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus adipisci, earum fugiat nesciunt quod sit blanditiis hic error labore.</P>
+    <h1>Welcome to Yool Bulsho</h1>
+    <p>Welcome to the Official Website of Yool Bulsho Organization!
+      Here, you'll find information about our activities, community programs, and how you can become part of our mission to build an aware, united, and empowered society. <br> Yool Bulsho is committed to sustainable development that benefits the entire community.</p>
     <img src="home.jpg" alt="Hero Image">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus repellat eveniet veritatis facere sequi beatae esse, voluptate ipsa quod voluptatibus.</p>
   </section>
 
   <!-- ABOUT SECTION -->
   <section id="about" class="section about">
-    <h2>About</h2>
-    <p>Yool Bulsho waa NGO Soomaaliyeed oo diiradda saara horumarinta dhalinyarada, waxbarashada iyo kobcinta bulshada.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus facilis eligendi vel cumque quis dicta accusamus provident minima alias, veritatis laborum quisquam expedita explicabo esse ipsa, pariatur fugiat quos sed.</p>
+    <h2>About Us – Yool Bulsho</h2>
+    <p>Yool Bulsho is an independent community-based organization committed to raising public awareness, expanding educational opportunities, strengthening social unity, and promoting environmental care. The organization was founded in response to the urgent need for a dedicated platform to drive sustainable development within the community.</p><br>
+    <p>Yool Bulsho believes that community and environment are two interconnected pillars. Therefore, we focus on:</p>
+    <p>Continuous awareness campaigns on social and environmental issues</p>
+    <p>Organizing educational programs, capacity-building trainings, and community cleanup activities </p>
+    <p>Supporting vulnerable groups and advocating for their rights</p><br>
+    <p>Creating opportunities for collaboration, community engagement, and meaningful connections</p>
+    <p>We are a team of passionate youth with vision, ambition, and a shared purpose—to build an inclusive, supportive, and progressive society.</p><br>
+    <p>Our mission is to lead the community toward positive change through collaboration, environmental protection, and the cultivation of an active civic spirit.</p>
+    <p>Our vision is a united, environmentally conscious, and solution-driven society equipped to overcome its challenges.</p>
     <div class="about-images">
-      <img src="team.jpg" alt="About Image 1">
-      <img src="team.jpg" alt="About Image 2">
+      <img src="uyb (8).jpg" alt="About Image 1">
+      <img src="/uyb.jpg" alt="About Image 2">
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam earum corrupti voluptatum, facere quam at fugit eos eius ullam commodi?</p>
+    <p></p>
   </section>
 
   <!-- GALLERY SECTION -->
-  <section id="gallery" class="section gallery">
+  
+  <section id="gallery">
     <h2>Photos</h2>
     <div class="gallery-grid">
-      <div><img src="team.jpg" alt="Activity 1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus.</p></div>
-      <div><img src="team.jpg" alt="Activity 2"><p>Gargaar Bulsho Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, culpa doloribus porro soluta laudantium consequatur excepturi tenetur harum ab odit.</p></div>
-      <div><img src="team.jpg" alt="Activity 3"><p>Seminaaro Waxbarasho Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto ullam officiis doloremque perferendis.</p></div>
+      <div class="gallery-item">
+        <img src="uyb (9).jpg" alt="Gudoomiye Zakrie Mohamed Ibrahim">
+        <div class="caption">Gudoomiye Zakrie Mohamed Ibrahim <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, rem unde tempora dolorem nesciunt repellendus provident. Ut mollitia quisquam modi!</div><h2>Gudoomiyaha Ururka Yool-Bulsho:</h2>
+      </div>
+      <div class="gallery-item">
+        <img src="uyb (13).jpg" alt="Munaasabada Afurinta bisha">
+        <div class="caption">Munaasabada Afurinta bisha</div>
+      </div>
+      <div class="gallery-item">
+        <img src="uyb (4).jpg" alt="Agaasime Zakariye Cabdi Xaashi">
+        <div class="caption">Agaasime Zakariye Cabdi Xaashi</div>
+      </div>
     </div>
   </section>
-
+  
   <!-- FOOTER WITH CONTACT -->
   <footer id="contact">
     <h2>Contact</h2>
@@ -76,7 +98,7 @@
 
     <div class="footer-info">
       <p>© 2025 Yool Bulsho. All Rights Reserved.</p>
-      <p>Email: <a href="ururkayoolbulsho@gmail.com" class="gmail">ururkayoolbulsho@gmail.com</a> | Phone: +252614573770</p>
+      <p>Email: <a href="ururkayoolbulsho@gmail.com" class="gmail">ururkayoolbulsho@gmail.com</a><br> | Phone: +252614573770</p>
       <p>Location: Muqdisho, Somalia</p>
       <div class="social">
         <a href="https://www.tiktok.com/@@ururkayoolbulsho?_t=ZM-8vSGeLW2d4Y&_r=1">TikTok</a> |
